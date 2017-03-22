@@ -21,14 +21,28 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 darkBg">
-            <ul class="nav nav-pills nav-stacked">
-              <li role="presentation" class="active"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Profile</a></li>
-              <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
+        <div class="col-md-12">
+            <table class="table">
+              <caption>Optional table caption.</caption>
+              <thead>
+                <tr> <th>#</th> <th>Client Name</th> <th>Action</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">1</th> <td>Client 1</td> <td><button type="button" class="btn btn-danger">Delete</button></td></tr>
+                <tr> <th scope="row">2</th> <td>Client 2</td> <td><button type="button" class="btn btn-danger">Delete</button></td> </tr>
+                <tr> <th scope="row">3</th> <td>Client 3</td> <td><button type="button" class="btn btn-danger">Delete</button></td></tr>
+              </tbody>
+            </table>
+
+            <form class="form-inline" action="/newuser" method="post">
+              <div class="form-group">
+                <label for="exampleInputName2">Client Name</label>
+                <input type="text" class="form-control" name="clientName" placeholder="Acme Corp"/>
+              </div>
+             
+              <button type="submit" class="btn btn-default">Add Client</button>
+            </form>
         </div>
-        <div class="col-md-8">.col-md-4</div>
       </div>
     </div>
 

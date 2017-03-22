@@ -2,6 +2,8 @@
   "name": "fromscratch",
   "version": "0.1.0",
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "body-parser":"*",
+    "express-handlebars":"*"
   }
 }
